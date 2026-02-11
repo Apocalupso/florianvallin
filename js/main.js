@@ -1,18 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-  const contactBtn = document.getElementById("contactBtn");
-  const methodeBtn = document.getElementById("methodeBtn");
-
-  contactBtn.addEventListener("click", function() {
-    document.getElementById("contact").scrollIntoView({
-      behavior: "smooth"
+  // Charger le header automatiquement
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header-placeholder").innerHTML = data;
     });
-  });
-
-  methodeBtn.addEventListener("click", function() {
-    document.getElementById("methode").scrollIntoView({
-      behavior: "smooth"
-    });
-  });
 
 });
