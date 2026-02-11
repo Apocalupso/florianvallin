@@ -75,22 +75,6 @@ body {
   letter-spacing: -1px;
 }
 
-.hero-lines {
-  margin-bottom: 35px;
-}
-
-.hero-lines p {
-  font-size: 20px;
-  margin-bottom: 4px;
-  color: var(--text-light);
-  line-height: 1.4;
-}
-
-
-.hero-lines {
-  margin-bottom: 40px;
-}
-
 .hero-bottom {
   margin-top: 40px;
   font-size: 16px;
