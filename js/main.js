@@ -1,10 +1,19 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
+  const reveals = document.querySelectorAll(".reveal");
 
-  // Charger le header automatiquement
-  fetch("header.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("header-placeholder").innerHTML = data;
+  function revealOnScroll() {
+    const windowHeight = window.innerHeight;
+
+    reveals.forEach((element) => {
+      const elementTop = element.getBoundingClientRect().top;
+      const revealPoint = 100;
+
+      if (elementTop < windowHeight - revealPoint) {
+        element.classList.add("active");
+      }
     });
+  }
 
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
 });
