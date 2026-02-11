@@ -14,6 +14,10 @@
   --background: #FAFAFF;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +29,7 @@ body {
   background: var(--background);
   color: var(--text-dark);
   line-height: 1.6;
+  padding-top: 80px;
 }
 
 section {
@@ -39,6 +44,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 42px;
+  color: var(--violet);
 }
 
 h2 {
@@ -51,6 +57,45 @@ p {
   color: var(--text-light);
   margin-bottom: 15px;
 }
+
+/* NAVBAR */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.nav-logo {
+  font-weight: bold;
+  color: var(--violet);
+  font-size: 18px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--violet);
+}
+
+/* BUTTONS */
 
 button {
   padding: 12px 24px;
@@ -67,6 +112,16 @@ button:hover {
   background: #7567e8;
 }
 
+.button-outline {
+  background: white;
+  color: var(--violet);
+  border: 2px solid var(--violet);
+}
+
+.button-outline:hover {
+  background: var(--violet-light);
+}
+
 /* HERO */
 
 .hero {
@@ -78,15 +133,11 @@ button:hover {
 }
 
 .hero-text {
-  max-width: 500px;
-}
-
-.hero-text h1 {
-  color: var(--violet);
+  max-width: 550px;
 }
 
 .hero-buttons {
-  margin-top: 20px;
+  margin-top: 25px;
   display: flex;
   gap: 15px;
 }
@@ -108,6 +159,11 @@ button:hover {
   box-shadow: 0 10px 25px rgba(0,0,0,0.05);
   width: 300px;
   text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card h3 {
@@ -181,28 +237,35 @@ footer {
 
 <body>
 
-<!-- HERO -->
+<nav class="navbar">
+  <div class="nav-logo">Florian Vallin</div>
+  <div class="nav-links">
+    <a href="#apropos">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#methode">Méthode</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
 <section class="hero">
   <div class="hero-text">
     <h1>Progresser en philosophie<br>avec méthode et confiance</h1>
     <p>Accompagnement personnalisé pour élèves de Terminale. Clarté, structure, sérénité.</p>
     <div class="hero-buttons">
-      <button>Prendre contact</button>
-      <button style="background:white;color:var(--violet);border:2px solid var(--violet);">Découvrir la méthode</button>
+      <button onclick="document.getElementById('contact').scrollIntoView()">Prendre contact</button>
+      <button class="button-outline" onclick="document.getElementById('methode').scrollIntoView()">Découvrir la méthode</button>
     </div>
   </div>
 </section>
 
-<!-- A PROPOS -->
-<section>
+<section id="apropos">
   <h2>Faisons connaissance</h2>
   <p style="text-align:center; max-width:700px; margin:20px auto;">
     Étudiant en philosophie, je propose un accompagnement structuré et bienveillant pour aider les élèves à comprendre réellement les notions, maîtriser la dissertation et gagner en confiance.
   </p>
 </section>
 
-<!-- SERVICES -->
-<section class="light-section">
+<section id="services" class="light-section">
   <h2>Mes services</h2>
   <div class="cards">
     <div class="card">
@@ -220,8 +283,7 @@ footer {
   </div>
 </section>
 
-<!-- MÉTHODE -->
-<section>
+<section id="methode">
   <h2>Comment ça se passe ?</h2>
   <div class="steps">
     <div class="step">
@@ -243,8 +305,7 @@ footer {
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="light-section">
+<section id="contact" class="light-section">
   <h2>Parlons de votre besoin</h2>
   <form class="contact-form">
     <input type="text" placeholder="Nom">
