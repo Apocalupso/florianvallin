@@ -3,90 +3,148 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Florian Vallin - Soutien scolaire en philosophie</title>
+<title>Florian Vallin | Philosophie & Méthodologie</title>
 
 <link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<!-- HEADER chargé dynamiquement -->
-<div id="header-placeholder"></div>
+<header class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">Florian Vallin</div>
+    <nav class="nav-links">
+      <a href="#approche">Approche</a>
+      <a href="#public">Public</a>
+      <a href="#about">Qui suis-je</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
 <section class="hero">
-  <div class="hero-text">
-    <h1>Progresser en philosophie<br>avec méthode et confiance</h1>
-    <p>Accompagnement personnalisé pour élèves de Terminale. Clarté, structure, sérénité.</p>
-    <div class="hero-buttons">
-      <button id="contactBtn">Prendre contact</button>
-      <button id="methodeBtn" class="button-outline">Découvrir la méthode</button>
+  <div class="hero-content">
+    <h1>Apprendre à penser clairement</h1>
+    <p>Cours de Philosophie & Méthodologie</p>
+    <p class="hero-sub">
+      J’accompagne lycéens, étudiants et adultes à comprendre en profondeur,
+      structurer leurs idées et travailler avec méthode.
+    </p>
+    <a href="#contact" class="btn-primary">Prendre contact</a>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <h2>Pourquoi cela peut sembler difficile</h2>
+    <p>
+      Beaucoup d’élèves travaillent sérieusement sans toujours savoir ce qui est réellement attendu.
+    </p>
+    <p>
+      Les notions semblent floues. Les méthodes restent implicites.
+    </p>
+    <p>
+      On demande de penser avec rigueur, sans toujours expliquer comment structurer sa réflexion.
+    </p>
+  </div>
+</section>
+
+<section id="approche" class="section">
+  <div class="container">
+    <h2>Une approche claire</h2>
+    <p>Mon objectif est simple : rendre les attentes compréhensibles et la méthode explicite.</p>
+    <ul class="list">
+      <li>Compréhension précise des notions</li>
+      <li>Méthode de la dissertation et du commentaire</li>
+      <li>Organisation des idées</li>
+      <li>Construction d’un raisonnement solide</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <h2>Ce que cela change</h2>
+    <p>Les idées deviennent plus claires.</p>
+    <p>Les devoirs plus structurés.</p>
+    <p>Progressivement, la confiance s’installe.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Apprendre à apprendre</h2>
+    <ul class="list">
+      <li>Organisation du travail</li>
+      <li>Mémorisation efficace</li>
+      <li>Planification des révisions</li>
+      <li>Outils numériques adaptés</li>
+    </ul>
+  </div>
+</section>
+
+<section id="public" class="section light">
+  <div class="container">
+    <h2>À qui s’adresse l’accompagnement ?</h2>
+    <ul class="list">
+      <li>Terminale (préparation du baccalauréat)</li>
+      <li>Études universitaires</li>
+      <li>Reprise d’études</li>
+      <li>Préparation de concours</li>
+    </ul>
+    <p>Chaque parcours est différent. L’accompagnement s’adapte aux objectifs de chacun.</p>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container about-container">
+    <div class="about-image">
+      <img src="images/florian.jpg" alt="Florian Vallin">
+    </div>
+    <div class="about-text">
+      <h2>Qui suis-je ?</h2>
+      <p>
+        Diplômé d’un Master de philosophie, spécialisé en philosophie de l’art,
+        j’accompagne depuis plusieurs années lycéens et étudiants en philosophie et en méthodologie.
+      </p>
+      <p>
+        Depuis près de dix ans, je développe une réflexion sur la méthode :
+        structuration du raisonnement, clarté rédactionnelle, techniques d’apprentissage
+        et outils numériques.
+      </p>
+      <p>
+        J’ai travaillé en cours particuliers privés (Acadomia) et assuré du tutorat
+        pour des licences de philosophie à distance.
+      </p>
+      <p>
+        Mon objectif est d’offrir un accompagnement sérieux, structuré et bienveillant.
+      </p>
     </div>
   </div>
 </section>
 
-<section id="apropos">
-  <h2>Faisons connaissance</h2>
-  <p style="text-align:center; max-width:700px; margin:20px auto;">
-    Étudiant en philosophie, je propose un accompagnement structuré et bienveillant pour aider les élèves à comprendre réellement les notions, maîtriser la dissertation et gagner en confiance.
-  </p>
-</section>
+<section id="contact" class="section light">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Tarif : 22 € / heure</p>
+    <p>Cours à distance ou en présentiel (Montpellier)</p>
 
-<section id="services" class="light-section">
-  <h2>Mes services</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Soutien Terminale</h3>
-      <p>Méthodologie dissertation, explication de texte, préparation bac.</p>
-    </div>
-    <div class="card">
-      <h3>Remise à niveau</h3>
-      <p>Clarifier les notions essentielles et structurer la pensée.</p>
-    </div>
-    <div class="card">
-      <h3>Suivi régulier</h3>
-      <p>Accompagnement personnalisé avec plan de progression.</p>
-    </div>
+    <form class="contact-form">
+      <input type="text" placeholder="Nom">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Votre message"></textarea>
+      <button type="submit" class="btn-primary">Envoyer</button>
+    </form>
   </div>
-</section>
-
-<section id="methode">
-  <h2>Comment ça se passe ?</h2>
-  <div class="steps">
-    <div class="step">
-      <div class="step-number">1</div>
-      <p>Premier échange gratuit</p>
-    </div>
-    <div class="step">
-      <div class="step-number">2</div>
-      <p>Évaluation du niveau</p>
-    </div>
-    <div class="step">
-      <div class="step-number">3</div>
-      <p>Plan de travail personnalisé</p>
-    </div>
-    <div class="step">
-      <div class="step-number">4</div>
-      <p>Suivi et progression</p>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="light-section">
-  <h2>Parlons de votre besoin</h2>
-  <form class="contact-form">
-    <input type="text" placeholder="Nom">
-    <input type="email" placeholder="Email">
-    <textarea placeholder="Votre message"></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
 </section>
 
 <footer>
-© 2026 Florian Vallin - Soutien scolaire en philosophie
+  © 2026 Florian Vallin
 </footer>
-
-<script src="js/main.js"></script>
 
 </body>
 </html>
