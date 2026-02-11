@@ -45,20 +45,29 @@ body {
 }
 
 .hero {
-  padding: 180px 20px 120px 20px;
+  padding: 200px 20px 140px 20px;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 52px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  letter-spacing: -1px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: var(--primary);
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .hero-sub {
   max-width: 600px;
   margin: 20px auto;
   color: var(--text-light);
+  font-size: 18px;
 }
 
 .section {
