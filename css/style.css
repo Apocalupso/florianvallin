@@ -45,29 +45,33 @@ body {
 }
 
 .hero {
-  padding: 200px 20px 140px 20px;
+  padding: 220px 20px 160px 20px;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 52px;
+  font-size: 50px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   letter-spacing: -1px;
 }
 
-.hero-subtitle {
-  font-size: 18px;
-  color: var(--primary);
-  font-weight: 500;
-  margin-bottom: 10px;
+.hero-lines p {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: var(--text-light);
 }
 
-.hero-sub {
-  max-width: 600px;
-  margin: 20px auto;
-  color: var(--text-light);
-  font-size: 18px;
+.hero-lines {
+  margin-bottom: 40px;
+}
+
+.hero-bottom {
+  margin-top: 40px;
+  font-size: 16px;
+  color: var(--primary);
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .section {
