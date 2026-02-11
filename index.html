@@ -5,234 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Florian Vallin - Soutien scolaire en philosophie</title>
 
-<style>
-:root {
-  --violet: #8B7CF6;
-  --violet-light: #F3F1FF;
-  --text-dark: #1F1F2E;
-  --text-light: #6B6B85;
-  --background: #FAFAFF;
-}
+<link rel="stylesheet" href="css/style.css">
 
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-body {
-  background: var(--background);
-  color: var(--text-dark);
-  line-height: 1.6;
-  padding-top: 80px;
-}
-
-section {
-  padding: 80px 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-h1, h2, h3 {
-  margin-bottom: 20px;
-}
-
-h1 {
-  font-size: 42px;
-  color: var(--violet);
-}
-
-h2 {
-  font-size: 32px;
-  text-align: center;
-  color: var(--violet);
-}
-
-p {
-  color: var(--text-light);
-  margin-bottom: 15px;
-}
-
-/* NAVBAR */
-
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: white;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  padding: 15px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-}
-
-.nav-logo {
-  font-weight: bold;
-  color: var(--violet);
-  font-size: 18px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 25px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: var(--text-dark);
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.nav-links a:hover {
-  color: var(--violet);
-}
-
-/* BUTTONS */
-
-button {
-  padding: 12px 24px;
-  border-radius: 8px;
-  border: none;
-  background: var(--violet);
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  background: #7567e8;
-}
-
-.button-outline {
-  background: white;
-  color: var(--violet);
-  border: 2px solid var(--violet);
-}
-
-.button-outline:hover {
-  background: var(--violet-light);
-}
-
-/* HERO */
-
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 80vh;
-  gap: 40px;
-}
-
-.hero-text {
-  max-width: 550px;
-}
-
-.hero-buttons {
-  margin-top: 25px;
-  display: flex;
-  gap: 15px;
-}
-
-/* CARDS */
-
-.cards {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  width: 300px;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card h3 {
-  color: var(--violet);
-}
-
-/* LIGHT SECTION */
-
-.light-section {
-  background: var(--violet-light);
-}
-
-/* STEPS */
-
-.steps {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 40px;
-}
-
-.step {
-  flex: 1;
-  min-width: 200px;
-  text-align: center;
-}
-
-.step-number {
-  background: var(--violet);
-  color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 15px;
-  font-weight: bold;
-}
-
-/* CONTACT */
-
-.contact-form {
-  max-width: 500px;
-  margin: 40px auto 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-input, textarea {
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-}
-
-textarea {
-  resize: none;
-  height: 120px;
-}
-
-footer {
-  text-align: center;
-  padding: 30px;
-  color: var(--text-light);
-  font-size: 14px;
-}
-</style>
 </head>
 
 <body>
@@ -252,8 +26,8 @@ footer {
     <h1>Progresser en philosophie<br>avec méthode et confiance</h1>
     <p>Accompagnement personnalisé pour élèves de Terminale. Clarté, structure, sérénité.</p>
     <div class="hero-buttons">
-      <button onclick="document.getElementById('contact').scrollIntoView()">Prendre contact</button>
-      <button class="button-outline" onclick="document.getElementById('methode').scrollIntoView()">Découvrir la méthode</button>
+      <button id="contactBtn">Prendre contact</button>
+      <button id="methodeBtn" class="button-outline">Découvrir la méthode</button>
     </div>
   </div>
 </section>
@@ -318,6 +92,8 @@ footer {
 <footer>
 © 2026 Florian Vallin - Soutien scolaire en philosophie
 </footer>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
