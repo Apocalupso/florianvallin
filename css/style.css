@@ -45,7 +45,6 @@ body {
 }
 
 .hero {
-  position: relative;
   padding: 240px 20px 180px 20px;
   text-align: center;
   background: linear-gradient(
@@ -56,38 +55,51 @@ body {
   );
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 160px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1px;
-  height: 120px;
-  background-color: rgba(108, 99, 255, 0.2);
-}
-
-
-.hero h1 {
-  font-size: 50px;
-  font-weight: 600;
-  margin-bottom: 40px;
-  letter-spacing: -1px;
-}
-
-.hero-bottom {
-  margin-top: 40px;
-  font-size: 16px;
-  color: var(--primary);
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-
 .hero-content {
   max-width: 700px;
   margin: auto;
 }
 
+.hero h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  letter-spacing: -1px;
+}
+
+.hero-lines {
+  margin-bottom: 35px;
+}
+
+.hero-lines p {
+  font-size: 20px;
+  margin-bottom: 4px;
+  color: var(--text-light);
+  line-height: 1.4;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 28px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.hero-bottom {
+  margin-top: 45px;
+  font-size: 16px;
+  color: var(--primary);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
 
 .section {
   padding: 100px 20px;
